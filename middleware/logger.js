@@ -22,7 +22,7 @@ const logEvents = async (message, logFileName) => {
     }
 }
 
-//-logs the req & res data -\\
+//-logs the req & res data-\\
 const logger = (req, res, next) => {
     logEvents(`${req.method}\t${req.url}\t${req.headers.origin}`,
      'reqLog.log')
